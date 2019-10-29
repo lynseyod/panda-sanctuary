@@ -21,13 +21,14 @@
       <!-- top navigation bar -->
       <nav class="main-nav clearfix"> <!--everything in the nav is floated-->
         <p class="logo">Panda Sanctuary</p>
+        <!-- getting ready to hide the nav on smaller screens -->
         <label for="toggle"><i class="fas fa-bars"></i></label>
         <input type="checkbox" name="toggle" id="toggle">
         <ul class="hidden-nav">
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#main-footer">Contact</a></li>
         </ul>
       </nav>
       <nav class="social-nav"> <!--floating social icons-->
@@ -45,17 +46,18 @@
 
   <!-- main content! -->
   <main>
-    <section class="about">
+    <section class="about" id="about">
       <div class="wrapper">
         <h2>Our New Friends</h2>
         <div class="panda-pics">
+          <!-- I would have loved to NOT have all the imgs jumbled up on one line like this but the browser interpreted it as ACTUAL white space and broke my layout. Everything is nothing and the universe is chaos. -->
           <img src="./assets/gallery-image-1.jpg" alt="Panda-monium, a panda, eating a shoot of bamboo!"><img src="./assets/gallery-image-2.jpg" alt="Pandit, another panda, looking great!"><img src="./assets/gallery-image-3.jpg" alt="Two pandas hugging!">
         </div>
         <article class="more-about">
           <img src="./assets/small-box.jpg" alt="Panda climbing on a tree">
           <h2>More about our park</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laborum natus quo, nemo hic eveniet pariatur adipisci nulla optio quisquam libero ex facilis ab sequi debitis, delectus, nihil perferendis corporis eius atque! Quasi exercitationem vel deserunt consequuntur aliquid expedita odio, error ducimus soluta nam repudiandae, quod, magni natus consequatur sed.</p>
-          <a href="#">Read More!</a>
+          <a href="">Read More!</a>
         </article>
       </div> <!--wrapper-->
     </section> <!--about section-->
@@ -66,12 +68,12 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga natus maxime assumenda beatae. Eligendi, minus. Magnam, aliquam temporibus qui recusandae culpa repellendus debitis maiores nostrum ea! Illo rerum similique sint!</p>
         <a href="#">Read More!</a>
       </div> <!-- bobby-bella -->
-      <img src="./assets/left-image.jpg" alt="Marco, a panda, chowing down on bamboo!">
+      <img src="./assets/left-image.jpg" alt="Marco, also a panda, chowing down on bamboo!">
       <div class="marco">
         <h2>Look at Marco now</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quidem labore odit dolores deleniti libero. Deleniti culpa libero assumenda suscipit officiis mollitia obcaecati, recusandae possimus dignissimos officia minima, a earum!</p>
         <a href="#">Read more</a>
-      </div> <div marco -->
+      </div> <!-- marco -->
     </section> <!--panda profiles-->
   </main>
 
@@ -80,23 +82,29 @@
     <section class="footer-icons clearfix">
       <div class="wrapper">
         <div class="icon">
-          <i class="fas fa-gift"></i>
-          <p>Donantions</p>
+          <a href="#">
+            <i class="fas fa-gift"></i>
+            <p>Donantions</p>
+          </a>
         </div>
         <div class="icon">
-          <i class="fas fa-briefcase"></i>
-          <p>Jobs</p>
+          <a href="#">
+            <i class="fas fa-briefcase"></i>
+            <p>Jobs</p>
+          </a>
         </div>
         <div class="icon">
-          <i class="fas fa-calendar-check"></i>
-          <p>Events</p>
+          <a href="#">
+            <i class="fas fa-calendar-check"></i>
+            <p>Events</p>
+          </a>
         </div>
       </div>
     </section>
-    <section class="main-footer">
+    <section class="main-footer" id="main-footer">
       <div class="wrapper clearfix">
         <form action="">
-          <h3>Stay Updated!</h3>
+          <h3>Stay Updated</h3>
           <label for="email">Subscribe to our newsletter to stay updated</label>
           <!-- <div class="email-input"> -->
             <input type="email" value="email address"><input type="submit" value="subscribe">

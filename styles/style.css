@@ -256,6 +256,10 @@ article a:focus {
   color: #2c2d2c;
 }
 
+.footer-icons a:hover {
+  text-shadow: 1px 1px 2px #213C28;
+}
+
 .icon {
   float:left;
   width: calc(100%/3);
