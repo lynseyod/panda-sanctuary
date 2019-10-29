@@ -100,7 +100,7 @@ input[type="checkbox"] {
 
 .logo {
   font-size: 2rem;
-  line-height: 20px;
+  line-height: 2rem;
   width: 110px;
   float: left;
   margin-left: 0;
@@ -338,6 +338,7 @@ input[type="submit"]:hover {
 
 .contact p {
   margin: 0;
+  line-height: 2.5rem;
 }
 
 .copyright {
@@ -450,7 +451,7 @@ input[type="submit"]:hover {
 
   article a {
     display: block;
-    width: 185px;
+    width: 150px;
     text-align: center;
     margin: 10px auto;
   }
@@ -475,7 +476,8 @@ input[type="submit"]:hover {
 
   .blog a {
     display: block;
-    width: 185px;
+    width: 150px;
+    text-align: center;
     margin: 0 auto;
   }
 
@@ -510,11 +512,39 @@ input[type="submit"]:hover {
 }
 
 @media (max-width:500px) {
+  html {
+    font-size: 45%;
+  }
   
-  
+  h1 {
+    font-size: 3.5rem;
+    width: 57%;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+    width: 40%;
+  }
+
   header {
-    height: 50vh;
+    height: 75vh;
     background-position: center;
+  }
+
+  .about img:first-of-type {
+    margin-right: 20px;
+  }
+
+  .about img {
+    width: calc(50% - 10px);
+  }
+
+  .footer-icons {
+    padding: 10px 0;
   }
 
   .footer-icons .icon {
