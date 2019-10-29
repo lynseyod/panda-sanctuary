@@ -94,6 +94,7 @@ input[type="checkbox"] {
   line-height: 20px;
   width: 110px;
   float: left;
+  margin-left: 0;
 }
 
 .main-nav ul {
@@ -362,10 +363,6 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 900px) {
-  html {
-    font-size: 62.5%;
-  }
-
   header label {
     position: fixed;
     right: 10%;
@@ -376,6 +373,11 @@ input[type="submit"]:hover {
 
   header label i {
     font-size: 3rem;
+    text-shadow: 1px 1px 2px #2c2d2c;
+  }
+
+  header label i:hover {
+    color: #116500;
   }
 
   .hidden-nav {
@@ -499,6 +501,8 @@ input[type="submit"]:hover {
 }
 
 @media (max-width:500px) {
+  
+  
   header {
     height: 50vh;
     background-position: center;
