@@ -366,11 +366,6 @@ input[type="submit"]:hover {
     font-size: 62.5%;
   }
 
-  header {
-    height: 50vh;
-    background-position: center;
-  }
-
   header label {
     position: fixed;
     right: 10%;
@@ -473,13 +468,6 @@ input[type="submit"]:hover {
     margin: 0 auto;
   }
 
-  .footer-icons .icon {
-    float: none;
-    margin: 50px 0;
-    width: 100%;
-    text-align: center;
-  }
-
   footer form {
     float: none;
     width: 100%;
@@ -508,4 +496,18 @@ input[type="submit"]:hover {
     margin: 0;
   }
 
+}
+
+@media (max-width:500px) {
+  header {
+    height: 50vh;
+    background-position: center;
+  }
+
+  .footer-icons .icon {
+    float: none;
+    margin: 50px 0;
+    width: 100%;
+    text-align: center;
+  }
 }
